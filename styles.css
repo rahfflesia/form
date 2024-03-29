@@ -101,6 +101,7 @@ body {
 
 .form-element span {
     display: block;
+    letter-spacing: .2em;
 }
 
 form {
