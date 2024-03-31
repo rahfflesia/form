@@ -66,7 +66,7 @@ body {
 
 .form-section {
     width: 65%;
-    height: 65%;
+    height: 40%;
     display: flex;
     align-items: center;
 }
@@ -99,7 +99,7 @@ body {
     gap: 10em;
 }
 
-.form-element span {
+.form-element span{
     display: block;
     letter-spacing: .2em;
 }
@@ -117,6 +117,10 @@ input {
     width: 120%;
 }
 
+input:focus{
+    border: thin solid var(--buton-color);
+}
+
 button {
     width: 20%;
     background-color: var(--buton-color);
@@ -125,6 +129,10 @@ button {
     padding: 1em;
     border-radius: .5em;
     margin-bottom: 1em;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .btn-container p{

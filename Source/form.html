@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Form</title>
 </head>
 <body>
     <div class="img-section">
         <div class="logo">
             <div class="inner-content">
-                <img src="odin-lined.png" alt="top-logo">
+                <img src="../Images/odin-lined.png" alt="top-logo">
                 <span>ODIN</span>
             </div>
         </div>
-        <img src="landscape" alt="norwegian village">
+        <img src="../Images/landscape" alt="norwegian village">
     </div>
     <div class="form-section">
         <div class="inner-form">
@@ -23,44 +24,46 @@
             </p>
             <p>You <em>know</em> you want to.</p>
             <div class="form-container">
-                <form action="">
+                <form id="parent">
                     <p>Let's do this!</p>
+                    <span>Required fields are followed by *</span>
                     <div class="form-element">
                         <div class="form-input">
-                            <span>FIRST NAME</span>
-                            <input type="text">
+                            <span>FIRST NAME *</span>
+                            <input type="text" id="first-name" required minlength="3">
                         </div>
                         <div class="form-input">
-                            <span>LAST NAME</span>
-                            <input type="text">
+                            <span>LAST NAME *</span>
+                            <input type="text" id="last-name" required minlength="3">
                         </div>
                     </div>
                     <div class="form-element">
                         <div class="form-input">
-                            <span>EMAIL</span>
-                            <input type="email">
+                            <span>EMAIL *</span>
+                            <input type="email" required>
                         </div>
                         <div class="form-input">
-                            <span>PHONE NUMBER</span>
-                            <input type="number">
+                            <span>PHONE NUMBER *</span>
+                            <input type="number" required minlength="9" maxlength="10">
                         </div>
-                    </div><div class="form-element">
+                    </div>
+                    <div class="form-element">
                         <div class="form-input">
-                            <span>PASSWORD</span>
-                            <input type="password">
+                            <span>PASSWORD *</span>
+                            <input type="password" required class="password">
                         </div>
                         <div class="form-input">
-                            <span>CONFIRM PASSWORD</span>
-                            <input type="password">
+                            <span>CONFIRM PASSWORD *</span>
+                            <input type="password" required class="confirm-password">
                         </div>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit">
+                            Create account
+                        </button>
+                        <p class="normal-text">Already have an account? <a href="#">Log in</a></p>
                     </div>
                 </form>
-            </div>
-            <div class="btn-container">
-                <button>
-                    Create account
-                </button>
-                <p class="normal-text">Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
